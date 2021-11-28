@@ -1,0 +1,34 @@
+{
+  "name": "avt-create",
+  "description": "CLI for speeding up the bootstrap of Vtex IO projects.",
+  "author": "Rodrigo Conti Ribeiro",
+  "version": "0.0.0",
+  "main": "./lib/index.js",
+  "bin": {
+    "avt-create": "./lib/index.js"
+  },
+  "scripts": {
+    "start": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
+    "build": "tsc -p .",
+    "release": "tsc -p . && npm install -g"
+  },
+  "dependencies": {
+    "@types/nodegit": "^0.27.6",
+    "@types/prompt-sync": "^4.1.1",
+    "chalk": "^4.1.0",
+    "commander": "^7.1.0",
+    "figlet": "^1.5.0",
+    "nodegit": "^0.27.0",
+    "path": "^0.12.7",
+    "prompt-sync": "^4.1.6"
+  },
+  "devDependencies": {
+    "@types/figlet": "^1.5.4",
+    "@types/node": "^14.14.33",
+    "nodemon": "^2.0.7",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.3"
+  },
+  "keywords": [],
+  "license": "ISC"
+}
